@@ -2,5 +2,26 @@
 import MainLayout from "../layouts/MainLayout.astro";
 ---
 <MainLayout name="ViewTransitions" prevSlideName="ViewTransitions1" nextSlideName="#">
-	
+  <h2>View Transitions</h2>
+  <div>
+		<h2>Alguien se fijo en las transiciones entre paginas?</h2>
+	</div>
 </MainLayout>
+
+<style>
+	div{
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	div > h2 {
+		font-size: 40px;
+		margin-bottom: 1rem;
+    text-align: center;
+  }
+	p {
+		font-size: 30px;
+	}
+</style>

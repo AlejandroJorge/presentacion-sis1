@@ -2,5 +2,25 @@
 import MainLayout from "../layouts/MainLayout.astro";
 ---
 <MainLayout name="ViewTransitions" prevSlideName="Integraciones" nextSlideName="ViewTransitions2">
-	
+	<div>
+		<h2>View Transitions</h2>
+    <p>SPAs en Astro?</p>
+	</div>	
 </MainLayout>
+
+<style>
+	div{
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	h2 {
+		font-size: 60px;
+		margin-bottom: 1rem;
+    text-align: center;
+  }
+	p {
+		font-size: 30px;
+	}

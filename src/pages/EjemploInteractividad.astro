@@ -1,6 +1,20 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import ReactComponent from "../components/ReactComponent";
+import SvelteComponentt from "../components/SvelteComponentt.svelte"
 ---
 <MainLayout name="Ejemplo" prevSlideName="Flexibilidad" nextSlideName="Integraciones">
-	
+	<h2>Por ejemplo...</h2>
+  <div id="container">
+    <ReactComponent client:load></ReactComponent>
+    <SvelteComponentt client:load></SvelteComponentt>
+  </div>
 </MainLayout>
+
+<style>
+  #container{
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+}
+</style>

@@ -2,5 +2,40 @@
 import MainLayout from "../layouts/MainLayout.astro";
 ---
 <MainLayout name="StaticSiteGeneration" prevSlideName="ImportanciaVelocidad" nextSlideName="StaticSiteGeneration2">
-	
+	<h2>Static Site Generation (SSG)</h2>
+  <div class="container">
+    <div class="box">
+      <h3>Plantillas</h3>
+      <p>Con HTML,CSS e informacion</p>
+    </div>
+    <div class="box">
+      <h3>Framework</h3>
+      <p>Procesa con informacion dinamica</p>
+    </div>
+    <div class="box">
+      <h3>Conjunto de paginas estaticas</h3>
+      <p>HTML y CSS</p>
+    </div>
+  </div>
 </MainLayout>
+
+<style>
+  .container {
+    flex:1;
+    display: flex;
+    column-gap: 3rem;
+  }
+  .box {
+    margin: 4rem;
+    background-color: dimgray;
+    border-radius: 1rem;
+    border: 0.2rem solid white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+</style>
