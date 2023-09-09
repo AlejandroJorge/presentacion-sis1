@@ -1,0 +1,26 @@
+---
+const {direction="#",text} = Astro.props;
+---
+
+<a href={"./"+direction}>
+  <div>
+    {text}
+  </div>
+</a>
+
+<style>
+  div{
+    background-color: lightgray;
+    padding: 0.8rem;
+    transition: 0.15s;
+    border-radius: 0.5rem;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+  }
+  div:active{
+    transform: scale(1.05);
+  }
+</style>

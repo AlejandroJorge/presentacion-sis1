@@ -1,0 +1,27 @@
+---
+import MainLayout from "../layouts/MainLayout.astro"
+---
+
+<MainLayout name="Portada" prevSlideName="#" nextSlideName="SobreLaWeb">
+	<div>
+		<h2>Astro</h2>
+		<p>Un nuevo enfoque en la arquitectura web Front End</p>
+	</div>
+</MainLayout>
+
+<style>
+	div{
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	h2 {
+		font-size: 100px;
+		margin-bottom: 1rem;
+	}
+	p {
+		font-size: 30px;
+	}
+</style>
