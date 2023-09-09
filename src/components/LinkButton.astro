@@ -2,7 +2,7 @@
 const {direction="#",text} = Astro.props;
 ---
 
-<a href={"./"+direction}>
+<a href={"/"+direction}>
   <div>
     {text}
   </div>
@@ -10,7 +10,8 @@ const {direction="#",text} = Astro.props;
 
 <style>
   div{
-    background-color: lightgray;
+    background-color: lightgray;path
+
     padding: 0.8rem;
     transition: 0.15s;
     border-radius: 0.5rem;
