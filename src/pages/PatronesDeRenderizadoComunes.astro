@@ -2,5 +2,25 @@
 import MainLayout from "../layouts/MainLayout.astro";
 ---
 <MainLayout name="PatronesDeRenderizadoComunes" prevSlideName="ConQueSeRenderiza" nextSlideName="PaginasEstaticas1">
-	
+	<div>
+		<h2>Algunos patrones de renderizado</h2>
+	</div>	
 </MainLayout>
+
+<style>
+	div{
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	h2 {
+		font-size: 60px;
+		margin-bottom: 1rem;
+    text-align: center;
+  }
+	p {
+		font-size: 30px;
+	}
+</style>

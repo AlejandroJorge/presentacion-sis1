@@ -2,5 +2,44 @@
 import MainLayout from "../layouts/MainLayout.astro";
 ---
 <MainLayout name="SinglePageApplications" prevSlideName="PaginasEstaticas2" nextSlideName="SinglePageApplications2">
-	
+	<h2>Single Page Applications</h2>
+  <div class="container">
+    <div class="box">
+      <h3>Usuario</h3>
+      <p>Interactua con la app (presiona botones)</p>
+    </div>
+    <div class="box">
+      <h3>App</h3>
+      <p><u>Modifica</u> su contenido</p>
+    </div>
+  </div>
+  <p>Una sola ruta <span>https://www.aplicacion.com</span></p>
 </MainLayout>
+
+<style>
+  .container {
+    flex:1;
+    display: flex;
+    column-gap: 3rem;
+  }
+  .box {
+    margin: 4rem;
+    background-color: dimgray;
+    border-radius: 1rem;
+    border: 0.2rem solid white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  ul {
+    text-align: left;
+  }
+  p {
+    text-align: center;
+    font-size: larger;
+  }
+</style>
