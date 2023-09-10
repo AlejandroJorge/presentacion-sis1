@@ -1,0 +1,26 @@
+---
+const { titulo, subtitulo } = Astro.props;
+---
+
+<div>
+  <h2>{titulo}</h2>
+  {subtitulo ? <p>{subtitulo}</p> : null}
+</div>
+
+<style>
+  div {
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  h2 {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  p {
+    font-size: 30px;
+  }
+</style>

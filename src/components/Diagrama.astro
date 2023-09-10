@@ -1,0 +1,60 @@
+---
+import ReactComponent from "./ReactComponent";
+import { light, dark } from "../js/palette";
+const staticColor = dark;
+const interactiveColor = light;
+---
+
+<div id="diagram-container">
+  <div id="diagram">
+    <div class="static">Componente estatico</div>
+    <div class="container">
+      <div class="static">Componente estatico</div>
+      <div class="interactive">
+        <ReactComponent client:load />
+      </div>
+    </div>
+    <div class="static">Componente estatico</div>
+  </div>
+</div>
+
+<style define:vars={{ staticColor, interactiveColor }}>
+  #diagram-container {
+    flex: 1;
+    display: flex;
+    padding: 2.5rem;
+  }
+  #diagram {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .static,
+  .interactive {
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .static {
+    flex: 1;
+    background-color: var(--staticColor);
+  }
+  .interactive {
+    flex: 1;
+    background-color: var(--interactiveColor);
+  }
+  .container {
+    display: flex;
+    column-gap: 1rem;
+    align-items: normal;
+    flex: 1;
+  }
+  @media (min-width: 1600px) {
+    .static,
+    .interactive {
+      font-size: 3rem;
+    }
+  }
+</style>

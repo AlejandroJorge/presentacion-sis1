@@ -1,28 +1,14 @@
 ---
+import Comentario from "../components/Comentario.astro";
+import ContentContainer from "../components/ContentContainer.astro";
+import TituloLocal from "../components/TituloLocal.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 ---
-<MainLayout name="SinglePageApplications" prevSlideName="SinglePageApplications2" nextSlideName="ImportanciaVelocidad">
-	<h2>Single Page Applications</h2>
-	<div>
-    <h3>Manipular el DOM es <u>lento</u></h3>
-    <h3>Google odia los HTML cascaron</h3>
-  </div>
+
+<MainLayout name="SinglePageApplications3">
+  <TituloLocal contenido="Single page applications" />
+  <ContentContainer>
+    <Comentario contenido="Manipular el DOM es lento" />
+    <Comentario contenido="Google odia los HTML cascaron" />
+  </ContentContainer>
 </MainLayout>
-<style>
-	div{
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-    gap: 1rem;
-	}
-	h3 {
-		font-size: 60px;
-		margin-bottom: 1rem;
-    text-align: center;
-  }
-	p {
-		font-size: 30px;
-	}
-</style>

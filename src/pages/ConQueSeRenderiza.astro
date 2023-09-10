@@ -1,48 +1,27 @@
 ---
+import Card from "../components/Card.astro";
+import CardContainer from "../components/CardContainer.astro";
 import MainLayout from "../layouts/MainLayout.astro";
+import TituloLocal from "../components/TituloLocal.astro";
+import ContentContainer from "../components/ContentContainer.astro";
+import { htmllogo, csslogo, javascriptlogo } from "../js/links";
 ---
-<MainLayout name="ConQueSeRenderiza" prevSlideName="SobreLaWeb" nextSlideName="PatronesDeRenderizadoComunes">
-	<h2>Con que se renderiza</h2>
-  <div class="container">
-    <div class="box">
-      <h3>HTML</h3>
-      <img width="80%" src="https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg"/>
-      <p>Que se vean cosas</p>
-    </div>
-    <div class="box">
-      <h3>CSS</h3>
-      <img width="80%" src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg"/>
-      <p>Que las cosas se vean bien</p>
-    </div>
-    <div class="box">
-      <h3>JavaScript</h3>
-      <img width="80%" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"/>
-      <p>Que se pueda interactuar con las cosas</p>
-    </div>
-  </div>
-</MainLayout>
 
-<style>
-  .container {
-    flex:1;
-    display: flex;
-    column-gap: 3rem;
-  }
-  .box {
-    margin: 4rem;
-    background-color: dimgray;
-    border-radius: 1rem;
-    border: 0.2rem solid white;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 1rem;
-  }
-  ul {
-    text-align: left;
-  }
-</style>
+<MainLayout name="ConQueSeRenderiza">
+  <TituloLocal contenido="Con que se renderiza" />
+  <ContentContainer>
+    <CardContainer>
+      <Card nombre="HTML" imagen={htmllogo} contenido="Que se vean cosas" />
+      <Card
+        nombre="CSS"
+        imagen={csslogo}
+        contenido="Que las cosas se vean bien"
+      />
+      <Card
+        nombre="JavaScript"
+        contenido="Que se pueda interactuar con las cosas"
+        imagen={javascriptlogo}
+      />
+    </CardContainer>
+  </ContentContainer>
+</MainLayout>

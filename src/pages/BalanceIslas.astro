@@ -1,35 +1,17 @@
 ---
+import CardContainer from "../components/CardContainer.astro";
 import MainLayout from "../layouts/MainLayout.astro";
+import Card from "../components/Card.astro";
+import TituloLocal from "../components/TituloLocal.astro";
+import ContentContainer from "../components/ContentContainer.astro";
 ---
-<MainLayout name="BalanceIslas" prevSlideName="DiagramaIslas" nextSlideName="MasAlla">
-	<h2>Islas de Interactividad</h2>
-  <div class="container">
-    <div class="box">
-      <h3>Velocidad</h3>
-    </div>
-    <div class="box">
-      <h3>Interactividad</h3>
-    </div>
-  </div>
-</MainLayout>
 
-<style>
-  .container {
-    flex:1;
-    display: flex;
-    column-gap: 3rem;
-  }
-  .box {
-    margin: 4rem;
-    background-color: dimgray;
-    border-radius: 1rem;
-    border: 0.2rem solid white;
-    flex: 1;
-    display: flex;
-    gap: 0.5rem;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-  }
-</style>
+<MainLayout name="BalanceIslas">
+  <TituloLocal contenido="Islas de interactividad" />
+  <ContentContainer>
+    <CardContainer>
+      <Card nombre="Velocidad" />
+      <Card nombre="Interactividad" />
+    </CardContainer>
+  </ContentContainer>
+</MainLayout>

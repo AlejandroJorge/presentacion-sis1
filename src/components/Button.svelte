@@ -16,16 +16,37 @@
     margin: auto;
     width: 200px;
     padding: 20px;
-    border: 2px solid #ccc;
     border-radius: 5px;
-    box-shadow: 0 2px 5px #aaa;
+    flex: 1;
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Default font size for h1 */
+  }
+
+  p {
+    font-size: 1rem; /* Default font size for p */
   }
 
   button {
     margin: 5px;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 16px; /* Default font size for buttons */
     cursor: pointer;
+  }
+
+  @media screen and (min-width: 1600px) {
+    h1 {
+      font-size: 4rem; /* Increase font size for h1 on larger screens */
+    }
+
+    p {
+      font-size: 2rem; /* Increase font size for p on larger screens */
+    }
+
+    button {
+      font-size: 2rem; /* Increase font size for buttons on larger screens */
+    }
   }
 </style>
 

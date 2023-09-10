@@ -1,42 +1,21 @@
 ---
+import CardContainer from "../components/CardContainer.astro";
+import Card from "../components/Card.astro";
 import MainLayout from "../layouts/MainLayout.astro";
+import TituloLocal from "../components/TituloLocal.astro";
+import ContentContainer from "../components/ContentContainer.astro";
+import { reactlogo } from "../js/links";
+import { vuelogo } from "../js/links";
+import { sveltelogo } from "../js/links";
 ---
-<MainLayout name="Flexibilidad" prevSlideName="MasAlla" nextSlideName="EjemploInteractividad">
-  <h2>Flexibilidad</h2>
-  <div class="container">
-    <div class="box">
-      <img width="80%" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"/>
-    </div>
-    <div class="box">
-      <img width="80%" src="https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg"/>
-    </div>
-    <div class="box">
-      <img width="80%" src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg"/>
-    </div>
-  </div>
-</MainLayout>
 
-<style>
-  .container {
-    flex:1;
-    display: flex;
-    column-gap: 3rem;
-  }
-  .box {
-    margin: 4rem;
-    background-color: dimgray;
-    border-radius: 1rem;
-    border: 0.2rem solid white;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 1rem;
-  }
-  ul {
-    text-align: left;
-  }
-</style>
+<MainLayout name="Flexibilidad">
+  <TituloLocal contenido="Flexibilidad" />
+  <ContentContainer>
+    <CardContainer>
+      <Card nombre="React" imagen={reactlogo} />
+      <Card nombre="Vue" imagen={vuelogo} />
+      <Card nombre="Svelte" imagen={sveltelogo} />
+    </CardContainer>
+  </ContentContainer>
+</MainLayout>

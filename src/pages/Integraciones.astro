@@ -1,45 +1,21 @@
 ---
+import Card from "../components/Card.astro";
+import CardContainer from "../components/CardContainer.astro";
+import ContentContainer from "../components/ContentContainer.astro";
+import TituloLocal from "../components/TituloLocal.astro";
+import { mdxlogo } from "../js/links";
+import { storybloklogo } from "../js/links";
+import { tailwindlogo } from "../js/links";
 import MainLayout from "../layouts/MainLayout.astro";
 ---
-<MainLayout name="Integraciones" prevSlideName="EjemploInteractividad" nextSlideName="ViewTransitions1">
-  <h2>Integraciones</h2>
-  <div class="container">
-    <div class="box">
-      <h3>Tailwind</h3>
-      <img width="80%" src="https://cdn.icon-icons.com/icons2/2699/PNG/512/tailwindcss_logo_icon_167923.png"/>
-    </div>
-    <div class="box">
-      <h3>MDx</h3>
-      <img width="80%" src="https://seeklogo.com/images/M/mdx-logo-60628A5188-seeklogo.com.png"/>
-    </div>
-    <div class="box">
-      <h3>Storyblok</h3>
-      <img width="80%" src="https://seeklogo.com/images/S/storyblok-icon-logo-F858B94590-seeklogo.com.png"/>
-    </div>
-  </div>
-</MainLayout>
 
-<style>
-  .container {
-    flex:1;
-    display: flex;
-    column-gap: 3rem;
-  }
-  .box {
-    margin: 4rem;
-    background-color: dimgray;
-    border-radius: 1rem;
-    border: 0.2rem solid white;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 1rem;
-  }
-  ul {
-    text-align: left;
-  }
-</style>
+<MainLayout name="Integraciones">
+  <TituloLocal contenido="Integraciones" />
+  <ContentContainer>
+    <CardContainer>
+      <Card nombre="Tailwind" imagen={tailwindlogo} />
+      <Card nombre="MDx" imagen={mdxlogo} />
+      <Card nombre="Storyblok" imagen={storybloklogo} />
+    </CardContainer>
+  </ContentContainer>
+</MainLayout>

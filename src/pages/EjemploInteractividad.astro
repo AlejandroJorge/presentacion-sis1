@@ -1,20 +1,18 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import ReactComponent from "../components/ReactComponent";
-import SvelteComponentt from "../components/SvelteComponentt.svelte"
+import UserList from "../components/UserList.svelte";
+import Button from "../components/Button.svelte";
+import CardContainer from "../components/CardContainer.astro";
+import TituloLocal from "../components/TituloLocal.astro";
+import ContentContainer from "../components/ContentContainer.astro";
 ---
-<MainLayout name="Ejemplo" prevSlideName="Flexibilidad" nextSlideName="Integraciones">
-	<h2>Por ejemplo...</h2>
-  <div id="container">
-    <ReactComponent client:load></ReactComponent>
-    <SvelteComponentt client:load></SvelteComponentt>
-  </div>
-</MainLayout>
 
-<style>
-  #container{
-    flex: 1;
-    display: flex;
-    justify-content: space-evenly;
-}
-</style>
+<MainLayout name="EjemploInteractividad">
+  <TituloLocal contenido="Por ejemplo..." />
+  <ContentContainer>
+    <CardContainer>
+      <UserList client:load />
+      <Button client:load />
+    </CardContainer>
+  </ContentContainer>
+</MainLayout>

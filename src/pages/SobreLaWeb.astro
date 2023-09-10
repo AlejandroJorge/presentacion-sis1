@@ -1,40 +1,18 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import Card from "../components/Card.astro";
+import CardContainer from "../components/CardContainer.astro";
+import TituloLocal from "../components/TituloLocal.astro";
+import ContentContainer from "../components/ContentContainer.astro";
 ---
-<MainLayout name="SobreLaWeb" prevSlideName="" nextSlideName="ConQueSeRenderiza">
-	<h2>Como funciona la web <i>in a nutshell</i></h2>
-  <div class="container">
-    <div class="box">
-      <h3>Servidor</h3>
-      <p>Envia Informacion</p>
-    </div>
-    <div class="box">
-      <h3>Navegador</h3>
-      <p>Procesa la informacion</p>
-    </div>
-    <div class="box">
-      <h3>Display</h3>
-    </div>
-  </div>
-</MainLayout>
 
-<style>
-  .container {
-    flex:1;
-    display: flex;
-    column-gap: 3rem;
-  }
-  .box {
-    margin: 4rem;
-    background-color: dimgray;
-    border-radius: 1rem;
-    border: 0.2rem solid white;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-</style>
+<MainLayout name="SobreLaWeb">
+  <TituloLocal contenido="Como funciona la web in a nutshell" />
+  <ContentContainer>
+    <CardContainer>
+      <Card nombre="Servidor" contenido="Envia informacion" />
+      <Card nombre="Navegador" contenido="Procesa la informacion" />
+      <Card nombre="Display" contenido="Muestra la informacion" />
+    </CardContainer>
+  </ContentContainer>
+</MainLayout>

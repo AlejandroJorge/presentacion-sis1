@@ -1,27 +1,13 @@
 ---
+import Comentario from "../components/Comentario.astro";
+import ContentContainer from "../components/ContentContainer.astro";
+import TituloLocal from "../components/TituloLocal.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 ---
-<MainLayout name="PaginasEstaticas" prevSlideName="PaginasEstaticas1" nextSlideName="SinglePageApplications1">
-	<h2>Paginas Estaticas</h2>
-  <div>
-		<h3>Pero y si tenemos contenido <u>dinamico</u>?</h3>
-	</div>
-</MainLayout>
 
-<style>
-	div{
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
-	h3 {
-		font-size: 60px;
-		margin-bottom: 1rem;
-    text-align: center;
-  }
-	p {
-		font-size: 30px;
-	}
-</style>
+<MainLayout name="PaginasEstaticas2">
+  <TituloLocal contenido="Paginas estaticas" />
+  <ContentContainer>
+    <Comentario contenido="Pero y si tenemos contenido dinamico" />
+  </ContentContainer>
+</MainLayout>
