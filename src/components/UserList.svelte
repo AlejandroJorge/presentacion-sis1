@@ -27,9 +27,6 @@
     font-size: 1rem;
   }
 
-  p {
-    font-size: 1rem;
-  }
   #container {
     flex: 1;
     display: flex;
@@ -50,7 +47,7 @@
       font-size: 4rem; 
     }
 
-    input,p,button,li {
+    input,button,li {
       font-size: 2rem; 
     }
 

@@ -21,38 +21,30 @@
   }
 
   h1 {
-    font-size: 1.5rem; /* Default font size for h1 */
-  }
-
-  p {
-    font-size: 1rem; /* Default font size for p */
+    font-size: 1.5rem;
   }
 
   button {
     margin: 5px;
     padding: 10px 20px;
-    font-size: 16px; /* Default font size for buttons */
+    font-size: 16px; 
     cursor: pointer;
   }
 
   @media screen and (min-width: 1600px) {
     h1 {
-      font-size: 4rem; /* Increase font size for h1 on larger screens */
-    }
-
-    p {
-      font-size: 2rem; /* Increase font size for p on larger screens */
+      font-size: 4rem;
     }
 
     button {
-      font-size: 2rem; /* Increase font size for buttons on larger screens */
+      font-size: 2rem;
     }
   }
 </style>
 
 <div class="counter">
-  <h1>Svelte Counter</h1>
-  <p>Count: {count}</p>
-  <button on:click={increment}>Increment</button>
-  <button on:click={decrement}>Decrement</button>
+  <h1>Contador</h1>
+  <p>Cuenta: {count}</p>
+  <button on:click={increment}>Aumentar</button>
+  <button on:click={decrement}>Decrementar</button>
 </div>
