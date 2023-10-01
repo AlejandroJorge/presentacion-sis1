@@ -23,7 +23,7 @@
 </script>
 
 <style>
-  h1 {
+  h3 {
     font-size: 1rem;
   }
 
@@ -42,10 +42,24 @@
     justify-content:space-evenly;
   }
 
+
+  @media (min-width: 1600px) {
+    h3 {
+      font-size: 3rem;
+    }
+    input {
+      font-size: 1.5rem;
+    }
+    button {
+      font-size: 1.5rem;
+      padding: 0.5rem;
+    }
+  }
+
 </style>
 
 <div id="container">
-  <h1>Lista interactiva</h1>
+  <h3>Lista interactiva</h3>
   <div>
     <input
       type="text"

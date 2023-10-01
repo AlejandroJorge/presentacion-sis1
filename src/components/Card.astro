@@ -30,4 +30,15 @@ const { nombre, imagen, contenido } = Astro.props;
     width: 8rem;
     max-height: 8rem;
   }
+  @media (min-width: 1600px) {
+    h3 {
+      font-size: 3rem;
+    }
+    div {
+      max-width: 25rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+  }
 </style>

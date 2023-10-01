@@ -1,5 +1,7 @@
 import { useState, useRef } from "react";
 
+import "./PokemonDisplay.css";
+
 export default function PokemonDisplay() {
   const [imgSrc, setImgSrc] = useState("");
   const formText = useRef("");
