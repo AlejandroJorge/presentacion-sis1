@@ -17,6 +17,7 @@ export default function PokemonDisplay() {
         flexDirection: "column",
         flex: "1",
         alignItems: "center",
+        justifyContent: "center",
       }}
     >
       <h3>Pokemon displayer</h3>

@@ -42,20 +42,6 @@
     justify-content:space-evenly;
   }
 
-  @media screen and (min-width: 1600px) {
-    h1 {
-      font-size: 4rem; 
-    }
-
-    input,button,li {
-      font-size: 2rem; 
-    }
-
-    li {
-      margin-bottom: 0.5rem;
-    }
-  }
-
 </style>
 
 <div id="container">
