@@ -1,0 +1,27 @@
+---
+import { Image } from "astro:assets";
+import TituloLocal from "../components/TituloLocal.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<MainLayout name="ComparacionHtml">
+  <TituloLocal contenido="Comparacion entre HTMLs" />
+  <div>
+    <img src="/pureHtmlVersion.png" />
+  </div>
+  <div>
+    <img src="/reactVersion.png" />
+  </div>
+</MainLayout>
+
+<style>
+  div {
+    flex: 1;
+    display: flex;
+    padding: 3.5rem;
+  }
+  img {
+    flex: 1;
+    max-width: 100%;
+  }
+</style>

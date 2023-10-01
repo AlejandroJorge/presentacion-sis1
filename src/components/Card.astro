@@ -7,6 +7,7 @@ const { nombre, imagen, contenido } = Astro.props;
   {nombre ? <h3>{nombre}</h3> : null}
   {imagen ? <img src={imagen} /> : null}
   {contenido ? <p>{contenido}</p> : null}
+  <slot />
 </div>
 
 <style>

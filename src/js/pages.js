@@ -9,6 +9,7 @@ const pages = [
   "SinglePageApplications2",
   "SinglePageApplications3",
   "ImportanciaVelocidad",
+  "ComparacionHtml",
   "StaticSiteGeneration1",
   "StaticSiteGeneration2",
   "IslasDeInteractividad",
