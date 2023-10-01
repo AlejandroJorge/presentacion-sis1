@@ -1,5 +1,4 @@
 import { useState, useRef } from "react";
-import { styled } from "styled-components";
 
 export default function PokemonDisplay() {
   const [imgSrc, setImgSrc] = useState("");
